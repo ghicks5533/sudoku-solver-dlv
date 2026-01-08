@@ -22,3 +22,16 @@ the solver computes valid answer sets that represent completed Sudoku boards.
 - Constraint Satisfaction
 
 ## Project Structure
+sudoku-solver-dlv/
+├── sudoku.lp # Core rules and constraints
+├── examples/
+│ └── puzzle1.lp # Sample Sudoku input
+
+## How to Run
+Assuming DLV is installed locally:
+
+bash
+dlv sudoku.lp examples/puzzle1.lp
+
+The solver outputs a valid assignment of place(Row, Column, Number) atoms
+representing a solved Sudoku board.
